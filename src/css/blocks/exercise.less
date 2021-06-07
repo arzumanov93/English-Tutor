@@ -1,0 +1,60 @@
+// main: ../style.less
+
+.exercise {
+    background: @lemon;
+    padding-bottom: 4rem;
+}
+
+.exercise__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.exercise__item {
+    width: 50%;
+    position: relative;
+}
+.exercise__item:hover {
+    .exercise__img {
+        opacity: .2;
+    }
+    .exercise__desc {
+        opacity: 1;
+    }
+}
+
+.exercise__photo {
+    padding: 1rem;
+}
+
+.exercise__img {
+    display: block;
+    width: 100%;
+
+    transition: opacity .2s linear;
+}
+
+.exercise__desc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    padding: 3rem 1rem;
+    text-align: center;
+    opacity: 0;
+
+    transition: opacity .2s linear;
+}
+
+.exercise__heading {
+    font-size: 1.3rem;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    color: red;
+}
+
+.exercise__text {
+    color: @blue;
+}

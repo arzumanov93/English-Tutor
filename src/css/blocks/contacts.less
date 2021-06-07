@@ -1,0 +1,36 @@
+// main: ../style.less
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts__photo {
+    position: relative;
+}
+
+.contacts__photo img {
+    width: 100%;
+}
+
+.contacts__content {
+    position: absolute;
+    top: 43%;
+    right: 15%;
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts__item img {
+    width: 3rem;
+    margin-right: 2rem;
+    transition: all .2s linear;
+    border-radius: .6rem;
+
+    &:hover {
+        transform: scale(1.2);
+        box-shadow: 0 0 5px @red;
+    }
+}

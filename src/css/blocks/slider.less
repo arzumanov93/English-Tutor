@@ -1,0 +1,90 @@
+// main: ../style.less
+
+.slider__counter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    color: @blue;
+}
+
+.slider__prev {
+    margin-right: .6rem;
+    cursor: pointer;
+}
+.slider__next {
+    width: 2rem;
+    margin-left: .6rem;
+    cursor: pointer;
+}
+
+.slider__prev img,
+.slider__next img {
+    width: 2rem;
+}
+
+#current {
+    font-size: 2rem;
+    color: @red;
+}
+
+.slider__wrapper {
+    width: 650px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 0 0 .5rem @red;
+    position: relative;
+}
+
+.slide {
+    width: 650px;
+    height: 300px;
+    transition: all .4s linear;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 1rem;
+    left: 245px;
+    z-index: 1;
+    display: flex;
+}
+
+.bar {
+    width: 2rem;
+    height: .7rem;
+    margin: 5px;
+    cursor: pointer;
+    background-color: @lemon;
+    opacity: .5;
+    border-radius: 5px;
+    border: 1px solid @red;
+
+    transition: all .2s linear;
+}
+.bar:hover {
+    background-color: @red;
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+#r1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#r2:checked ~ .s1 {
+    margin-left: -25%;
+}
+
+#r3:checked ~ .s1 {
+    margin-left: -50%;
+}
+
+#r4:checked ~ .s1 {
+    margin-left: -75%;
+}

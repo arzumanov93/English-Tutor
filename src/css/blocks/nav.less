@@ -1,0 +1,64 @@
+// main: ../style.less
+
+.nav__wrapper {
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 2rem;
+    background: @peach;
+    border-radius: 10px;
+    box-shadow: 0 0 5px @blue;
+}
+.nav__link {
+    margin: 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: @blue;
+    align-items: center;
+    text-align: center; 
+    position: relative;
+}
+
+.nav__link:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: @blue;
+
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    z-index: 1;
+
+    transition: width .2s linear;
+}
+.nav__link:hover:after {
+    width: 100%;
+}
+/*
+.nav__link:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    background: black;
+    position: absolute;
+    top: 18px;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .2s linear;
+}
+.nav__link:hover::after {
+    opacity: 1;
+}
+*/

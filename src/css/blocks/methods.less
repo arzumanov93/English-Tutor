@@ -1,0 +1,86 @@
+// main: ../style.less
+
+.methods {
+    background: @peach;
+    height: 980px;
+}
+
+.methods__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 0 0 5px @blue;
+    margin-bottom: 1rem;
+    background: linear-gradient(@peach, @lemon);
+}
+
+.methods__item {
+    width: 50%;
+    padding: 1rem;
+    position: relative;
+}
+
+.methods__info {
+    width: 1100px;
+    position: absolute;
+    top: 22rem;
+    left: -225px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.methods__img-tabs {
+    width: 60%;
+    border-radius:2rem;
+    box-shadow: 0 0 10px @blue;
+}
+
+.methods__text {
+    width: 40%;
+    padding: 1.2rem;
+    color: @blue;
+    font-size: 1.2rem;
+}
+
+.methods__heading {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: @red;
+    margin-bottom: 1rem;
+}
+
+.methods__img {
+    display: block;
+    width: 16rem;
+    margin: 0 auto;
+}
+
+.methods__tabs {
+    width: 50%;
+}
+
+.methods__tabs-link {
+    display: block;
+    color: @blue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    transition: all .2s linear;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.methods__tabs-link-active {
+    transform: scale(1.3);
+}

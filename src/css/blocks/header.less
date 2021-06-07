@@ -1,0 +1,76 @@
+// main: ../style.less
+
+.header {
+    padding: 2rem 0;
+    background-color: @lemon;
+}
+
+.header__inner {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar {
+    filter: grayscale(50%);
+    width: 330px;
+}
+
+.header__info {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    text-align: right;
+    color: @blue;
+}
+
+.header__name {
+    font-size: 4rem;
+    margin-bottom: 4.2rem
+}
+
+.header__tutor {
+    font-size: 2rem;
+}
+
+.header__bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.header__reg {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+
+    //display: flex;
+    //align-items: center;
+    //cursor: pointer;
+}
+
+.header__reg:hover {
+    .header__reg-arrow {
+        width: 1.5rem;
+    }
+}
+
+.header__reg-text {
+    margin-right: .7rem;
+    color: @red;
+}
+
+.header__reg-arrow {
+    width: 0;
+    color: @blue;
+    transition: width .2s linear;
+}

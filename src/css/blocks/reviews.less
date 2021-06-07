@@ -1,0 +1,125 @@
+// main: ../style.less
+
+.reviews {
+    background-color: @peach;
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.reviews__item {
+    background-color: @lemon;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+
+    //border: 2px solid @peach;
+    //border-radius: 1rem;
+    //box-shadow: 0 0 7px @lemon;
+}
+
+.reviews__photo {
+    width: 25%;
+    padding: 1.5rem 0 0 1rem;
+}
+
+.reviews__avatar {
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+
+    border-radius: 50%;
+    box-shadow: 0 0 7px @red;
+}
+
+.reviews__content {
+    width: 75%;
+    color: @blue;
+    padding: 1.5rem;
+    font-family: 'Gabriela', serif;
+    font-size: 1rem;
+}
+
+.reviews__name {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.reviews__age {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.reviews__text {
+    color: @red;
+}
+
+.reviews__form {
+    width: 600px;
+    margin: 0 auto;
+    color: @blue;
+    font-family: 'Gabriela', serif;
+}
+
+.reviews__form-title {
+    padding: .7rem 0;
+}
+
+.reviews__form-label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: .6rem;
+}
+
+.reviews__form-input {
+    height: 2rem;
+    padding: 0 1rem;
+    border-radius: .3rem;
+    width: 50%;
+}
+
+textarea {
+    border-color: @red;
+}
+
+textarea.reviews__form-input  {
+    min-height: 10rem;
+    resize: vertical;
+    padding: 1rem;
+}
+
+.reviews__file-item {
+    position: relative;
+}
+
+.reviews__file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.reviews__file-button {
+    display: inline-flex;
+    min-height: 2rem;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: @blue;
+    padding: 0 .6rem;
+    color: @lemon;
+    margin-bottom: 1.5rem;
+
+    &:hover {
+        box-shadow: 0 0 .3rem @blue;
+    }
+}
+
+.reviews__form-button {
+    margin-bottom: .7rem;
+    cursor: pointer;
+}

@@ -1,0 +1,79 @@
+// main: ../style.less
+
+.price {
+    background: @lemon;
+    padding-bottom: 2rem;
+}
+
+.price__content {
+    width: 900px;
+    margin: 0 auto;
+    font-family: 'Gabriela', serif;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__item {
+    text-align: center;
+    padding: 0 1rem 1rem 1rem;
+    color: @blue;
+}
+
+.price__heading {
+    font-size: 1.5rem;
+}
+
+.price__value,
+.price__value-changed {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2rem;
+    text-transform: uppercase;
+    background-color: @red;
+    color: @lemon;
+    padding: .6rem .7rem;
+    width: 350px;
+    margin: 2rem auto;
+    border-radius: 1rem;
+}
+
+.price__sale-heading {
+    font-size: 3rem;
+    color: @blue;
+    text-transform: uppercase;
+}
+
+.price__sale-text,
+.price__sale-end {
+    padding-top: 1rem;
+    font-family: 'Gabriela', serif;
+    color: @blue;
+}
+
+.price__sale-end {
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+}
+
+.price__sale-text span {
+    font-size: 1.3rem;
+    color: @red;
+}
+
+.price__value-changed {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price__value-before {
+    width: 30%;
+    text-decoration: line-through;
+}
+
+.price__value-after {
+    width: 70%;
+    transform: scale(1.2);
+}
+
+.price__value-rub {
+    font-size: 1rem;
+}

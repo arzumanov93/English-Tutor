@@ -1,0 +1,133 @@
+// main: ../style.less
+/*
+.button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    background-color: @red;
+    padding: .6rem .7rem;
+    width: 20rem;
+    height: 2rem;
+    border-radius: 1rem;
+
+    text-align: center;
+    justify-content: center;
+
+    animation: button .8s infinite linear;
+}*/
+
+.button {
+    background-color: @red;
+    color: @lemon;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5rem .9rem;
+    border-radius: .7rem;
+
+    box-shadow: 0 .3rem .3rem @blue;
+    transition: all .2s linear;
+
+    &:hover {
+        background-color: @blue;
+        box-shadow: 0 .3rem .3rem @red;;
+    }
+}
+
+.button__wrapper {
+    position: absolute;
+    right: 0;
+    bottom: 1rem;
+    z-index: 1;
+}
+
+.button__wrapper-price {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+/* Плавающая кнопка
+.button {
+    display: flex;
+    width: 18rem;
+    height: 3rem;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden;
+
+    transition: all .8s ease 0s;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0 0 10px 10px;
+}
+
+.button:hover {
+    border-radius: 10px;
+
+    transition: all .8s ease .2s;
+
+    box-shadow: 0 0 40px rgba(73, 115, 255, .6);
+}
+
+.button:hover .button__waves {
+    top: -50px;
+}
+
+.button__text {
+    position: relative;
+    color: @lemon;
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+.button__waves {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16rem;
+    height: 16rem;
+    background-color: @blue;
+
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+
+    transition: all .8s linear;
+}
+
+.button__waves::after,
+.button__waves::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 250%;
+    height: 250%;
+
+    transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+}
+
+.button__waves::before {
+    background-color: white;
+    border-radius: 48%;
+
+    animation: waves 5s infinite linear;
+}
+
+.button__waves::after {
+    background-color: rgba(213, 213, 213, 0.5);
+    border-radius: 44%;
+
+    animation: waves 5s infinite linear;
+}
+
+@keyframes waves {
+    0% {
+        transform: translate3d(-50%, -96%, 0) rotate(0deg) scale(1);
+    }
+    100% {
+        transform: translate3d(-50%, -96%, 0) rotate(360deg) scale(1);
+    }
+}
+
+*/

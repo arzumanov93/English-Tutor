@@ -51,7 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function hideMethod() {
         method.forEach(item => {
-            item.style.display = 'none';
+            item.classList.add('hide');
+            item.classList.remove('show');
         });
         tabs.forEach(item => {
             item.classList.remove('methods__tabs-link-active');
@@ -59,9 +60,13 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showMethod(i = 0) {
-        method[i].style.display = 'block';
+        method[i].classList.add('show', 'fade');
+        method[i].classList.remove('hide');
         tabs[i].classList.add('methods__tabs-link-active');
     }
+
+    hideMethod();
+    showMethod();
 
     tabsParent.addEventListener('click', (event) => {
         const target = event.target;

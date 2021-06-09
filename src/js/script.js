@@ -82,7 +82,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     //Timer
-/*
+
     const deadline = '2021-08-31';
 
     function getTimeRemaning(endtime) {
@@ -101,7 +101,13 @@ window.addEventListener('DOMContentLoaded', () => {
         };
     }
 
-    setClock('.timer', deadline);
+    function getZero(num) {
+        if (num >= 0 && num < 10) {
+            return `0${num}`;
+        } else {
+            return num;
+        }
+    }
 
     function setClock(selector, endtime) {
         const timer = document.querySelector(selector),
@@ -110,6 +116,8 @@ window.addEventListener('DOMContentLoaded', () => {
               minutes = timer.querySelector('#minutes'),
               seconds = timer.querySelector('#seconds'),
               timeInterval = setInterval(updateClock, 1000);
+
+        updateClock();
 
         function updateClock() {
             const t = getTimeRemaning(endtime);
@@ -122,19 +130,11 @@ window.addEventListener('DOMContentLoaded', () => {
             if (t.total <= 0) {
                 clearInterval(timeInterval);
             }
-
-            setClock('.timer__item', deadline);
         }
     }
 
-    function getZero(num) {
-        if (num >= 0 && num < 10) {
-            return `0${num}`;
-        } else {
-            return num;
-        }
-    }
-*/
+    setClock('.timer', deadline);
+
 
     // Slider
 
